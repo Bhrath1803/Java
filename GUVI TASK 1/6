@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Discount
+{
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter Name: ");
+        String name = in.nextLine();
+        System.out.print("Enter Purchase Amount: ");
+        double amt = in.nextInt();
+        int d = 0;
+        
+        if (amt < 500)
+            d = 0;
+        else if (amt <= 1000)
+            d = 10;
+        else if (amt > 1000)
+            d = 20;
+            
+        double discAmt = amt * d / 100.0;
+        double finalAmt = amt - discAmt;
+        
+        System.out.println("Name: " + name);
+        System.out.println("Purchase Amount: " + amt);
+        System.out.println("Final Payable Amount: " + finalAmt);
+    }
+}

@@ -1,0 +1,23 @@
+public class Person {
+    private String name;
+    private static int age;
+
+    public Person() {
+        this.age = 18; // Default age
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void displayPerson() {
+        System.out.println("Name: " + this.name + ", Age: " + this.age);
+    }
+
+    public static void main(String[] args) {
+        Person person1 = new Person("bharath", 18);
+        person1.displayPerson(); 
+         
+    }
+}

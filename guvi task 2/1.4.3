@@ -1,0 +1,50 @@
+public class day1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		//amount
+		double amount=6000.00;
+		while(true) {
+			System.out.println("\n. welcome to sbi bank");
+			System.out.println("1.check balance");
+			System.out.println("2.deposit money");
+			System.out.println("3.withdraw money");
+			System.out.println("4.exit");
+			
+			System.out.print("enter choice from 1 to 4");
+		int choice=sc.nextInt();
+		switch(choice) {
+			case 1:
+				System.out.println("your current balance"+amount);
+				break;
+	
+			case 2:
+				System.out.println("enter the amount to deposit ");
+				double deposit=sc.nextDouble();
+				if(deposit>0) {
+					amount=amount+deposit;
+				System.out.println("amount deposited sucessfully");
+				System.out.println("updated amount"+amount);
+				}else {System.out.println("invalid input");
+				}
+				break;
+			case 3:
+				System.out.println("enter the amount to withdraw:");
+				double withdraw=sc.nextDouble();
+				
+				if (withdraw>0 && withdraw<=amount);{
+				amount-=withdraw;
+				System.out.println("amount withdraw sucessfull");
+				System.out.println("remaing balance"+amount);
+				//else
+				 System.out.println("insufficiant funt");
+			     }
+				break;
+				case 4:
+					System.out.println("thanks");
+					System.exit(0);
+					
+		}
+	}
+}}
