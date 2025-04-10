@@ -1,0 +1,44 @@
+import java.util.HashMap;
+
+public class StudentGrades {
+
+    private HashMap<String, Integer> studentGrades;
+
+    public StudentGrades() {
+        this.studentGrades = new HashMap<>();
+    }
+
+    
+    public void addStudent(String name, int grade) {
+        this.studentGrades.put(name, grade);
+    }
+
+  
+    public void removeStudent(String name) {
+        this.studentGrades.remove(name);
+    }
+
+    
+    public Integer getStudentGrade(String name) {
+       return this.studentGrades.get(name);
+    }
+
+    public static void main(String[] args) {
+        StudentGrades grades = new StudentGrades();
+
+       
+        grades.addStudent("bharath", 95);
+        grades.addStudent("sanju", 80);
+        grades.addStudent("chandran", 90);
+
+        
+        System.out.println("bharath grade: " + grades.getStudentGrade("bharath")); // Output: 95
+
+     
+        grades.removeStudent("sanju");
+
+      
+        System.out.println("sanju' s grade: " + grades.getStudentGrade("sanju")); // Output: null
+
+    }
+}
