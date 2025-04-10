@@ -4,16 +4,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class string {
-
     public static void main(String[] args) {
-        // Question 1: Convert a list of Strings to uppercase using map()
-        Stream<String> names = Stream.of("abc", "d", "ef");
-        List<String> uppercaseNames = names.map(String::toUpperCase).collect(Collectors.toList());
-        System.out.println("Uppercase names: " + uppercaseNames);
-
-        // Question 2: Filter out empty Strings from a list
-        List<String> stringList = Arrays.asList("abc", "", "be", "efg", "abcd", "", "jkl");
-        List<String> nonEmptyStrings = stringList.stream().filter(s -> !s.isEmpty()).collect(Collectors.toList());
-        System.out.println("Non-empty strings: " + nonEmptyStrings);
+        Stream<String> names = Stream.of("aBc", "d", "ef");
+        List<String> upperCaseNames = names.map(String::toUpperCase).collect(Collectors.toList());
+        System.out.println(upperCaseNames); // Output: [ABC, D, EF]
     }
 }
