@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+
+class Book {
+    private int bookID;
+    private String title;
+    private String author;
+    private boolean isAvailable;
+
+    public Book(int bookID, String title, String author, boolean isAvailable) {
+        this.bookID = bookID;
+        this.title = title;
+        this.author = author;
+        this.isAvailable = isAvailable;
+    }
+  
+    
+    @Override
+    public String toString() {
+        return "Book ID: " + bookID + ", Title: " + title + ", Author: " + author + ", Available: " + isAvailable;
+    }
+
+	public int getBookID() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
+
+class Library {
+    private ArrayList<Book> books;
+
+    public Library() {
+        this.books = new ArrayList<>();
+    }
+
+    public void addBook(Book book) {
+        this.books.add(book);
+    }
+
+    public void removeBook(int bookID) {
+        this.books.removeIf(book -> book.getBookID() == bookID);
+    }
+
+    public Book searchBook(int bookID) {
+        for (Book book : this.books) {
+            if (book.getBookID() == bookID) {
+                return book;
+            }
+        }
+        return null;
+    }
+
+    public void displayBooks() {
+        for (Book book : this.books) {
+            System.out.println(book);
+        }
+    }
+}
+
+   

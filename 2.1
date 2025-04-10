@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class DriverMain {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter employee ID:");
+        int empId = scanner.nextInt();
+        scanner.nextLine(); 
+        System.out.println("Enter employee name:");
+        String empName = scanner.nextLine();
+        System.out.println("Enter employee salary:");
+        double empSalary = scanner.nextDouble();
+
+        Employee employee = new Employee(empId, empName, empSalary);
+        double employeeTax = employee.calcTax();
+
+        System.out.println("Enter product ID:");
+        int prodId = scanner.nextInt();
+        System.out.println("Enter product price:");
+        double prodPrice = scanner.nextDouble();
+        System.out.println("Enter product quantity:");
+        int prodQuantity = scanner.nextInt();
+
+        Product product = new Product(prodId, prodPrice, prodQuantity);
+        double productTax = product.calcTax();
+
+        System.out.println("Employee Income Tax: " + employeeTax);
+        System.out.println("Product Sales Tax: " + productTax);
+
+        
+    }
+}
