@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> programming language and database</title>
+    </head>
+    <body>
+        <section>
+            <h1>programming language </h1>
+            <ul>
+                <li>
+                    javascript
+                    <ol type="a">
+                        <li>Angular</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                    </ol>
+                </li>
+                <li>
+                    Python
+                    <ol type="a">
+                        <li>Django Framework</li>
+                        <li>Flask Framework</li>
+                    </ol>
+                </li>
+                <li>
+                    java
+                    <ol type="a">
+                        <li>spring</li>
+                        <li>maven</li>
+                        <li>hibernate</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>database</h2>
+            <ul>
+                <li>mysql</li>
+                <li>mongodb</li>
+                <li>cassadara</li>
+                
+            </ul>
+        </section>
+    </body>
+</html>
