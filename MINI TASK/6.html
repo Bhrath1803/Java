@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Type Form</title>
+</head>
+<body>
+
+  <h2>Employee Information</h2>
+
+  <form action="#" method="post">
+    <label for="name">Full Name <span style="color: red">*</span>:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email <span style="color: red">*</span>:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label>Employee Type <span style="color: red">*</span>:</label><br>
+    <input type="radio" id="salaried" name="employeeType" value="Salaried" required>
+    <label for="salaried">Salaried</label><br>
+
+    <input type="radio" id="ownBusiness" name="employeeType" value="Own Business" required>
+    <label for="ownBusiness">Own Business</label><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BAPU Graphics - Styled Table Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafbfc;
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      width: 80%;
+      margin: 50px auto;
+      border-collapse: separate;
+      border-spacing: 0 20px;
+      background: #fff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border-radius: 18px;
+    }
+    td {
+      padding: 25px;
+      vertical-align: middle;
+      text-align: center;
+    }
+    .header {
+      background: #1a1a1a;
+      color: #fff;
+      font-size: 2em;
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+      letter-spacing: 2px;
+    }
+    .course-btn {
+      background: #fe5731;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      font-size: 1.2em;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(254,87,49,0.15);
+    }
+    .illustration {
+      padding: 0;
+      margin: 0;
+    }
+    /* Responsive Design */
+    @media screen and (max-width: 800px) {
+      table {
+        width: 100%;
+      }
+      td {
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="header" colspan="3">BAPU GRAPHICS</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.2em;">
+        <b>About Us</b><br>
+        We offer customized graphic design and animation courses.
+      </td>
+      <td rowspan="2" class="illustration">
+        <!-- Illustration placeholder; replace src with your actual image file if needed -->
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/laptop-2022221_1280.png" alt="Illustration" width="260" style="border-radius:12px;">
+      </td>
+      <td style="font-size:1.2em;">
+        <b>Contact Us</b><br>
+        <span>Email: contactbapugraphics@gmail.com</span><br>
+        <span>Call: 9891222738</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button class="course-btn">Request For Call Back</button>
+      </td>
+      <td>
+        <b>Our Courses</b><br>
+        Graphic Design, Animation, Web Design, etc.
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

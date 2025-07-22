@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Elements with Default Values</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input, select, textarea {
+      margin-top: 5px;
+      margin-bottom: 15px;
+      width: 300px;
+    }
+    textarea {
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Form Elements with Default Values</h2>
+
+  <form>
+    <!-- Text input -->
+    <label>Text:
+      <input type="text" name="username" value="bharat">
+    </label>
+
+    <!-- Password input -->
+    <label>Password:
+      <input type="password" name="password" value="secret123">
+    </label>
+
+    <!-- Email input -->
+    <label>Email:
+      <input type="email" name="email" value="bharath@gmail.com">
+    </label>
+
+    <!-- Number input -->
+    <label>Age:
+      <input type="number" name="age" value="30">
+    </label>
+
+    <!-- URL input -->
+    <label>Website:
+      <input type="url" name="website" value="https://example.com">
+    </label>
+
+    <!-- Tel input -->
+    <label>Phone:
+      <input type="tel" name="phone" value="+1234567890">
+    </label>
+
+    <!-- Date input -->
+    <label>Birthdate:
+      <input type="date" name="birthdate" value="1990-01-01">
+    </label>
+
+    <!-- Time input -->
+    <label>Time:
+      <input type="time" name="appointment_time" value="10:00">
+    </label>
+
+    <!-- Checkbox -->
+    <label>
+      <input type="checkbox" name="subscribe" checked> Subscribe to newsletter
+    </label>
+
+    <!-- Radio buttons -->
+    <label>Gender:</label>
+    <label><input type="radio" name="gender" value="male" checked> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+
+    <!-- Select dropdown -->
+    <label>Country:
+      <select name="country">
+        <option value="us" selected>United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="in">India</option>
+      </select>
+    </label>
+
+    <!-- Multiple select -->
+    <label>Languages:
+      <select name="languages" multiple size="3">
+        <option value="en" selected>English</option>
+        <option value="es">Spanish</option>
+        <option value="fr" selected>French</option>
+      </select>
+    </label>
+
+    <!-- Textarea -->
+    <label>Bio:
+      <textarea name="bio">Hello, I’m a web developer.</textarea>
+    </label>
+
+    <!-- Hidden input -->
+    <input type="hidden" name="userId" value="12345">
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
