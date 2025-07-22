@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head><title>Product List</title></head>
+<body>
+<h2>Product List</h2>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<table border="1">
+  <tr>
+    <th>ID</th><th>Name</th><th>Price</th><th>Category</th>
+  </tr>
+  <th:block th:each="product : ${products}">
+    <tr>
+      <td th:text="${product.id}"></td>
+      <td th:text="${product.name}"></td>
+      <td th:text="${product.price}"></td>
+      <td th:text="${product.category}"></td>
+    </tr>
+  </th:block>
+</table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <button onclick="showForm()">Add Product</button>
+        <button onclick="showTable()">Display Product</button>
+    </div>
+
+    <div class="main">
+        <div class="form-section" id="formSection">
+            <h3>Add Product</h3>
+            <label>Product Name: <input type="text" id="name" /></label><br>
+            <label>Price: <input type="number" id="price" /></label><br>
+            <label>Category: <input type="text" id="category" /></label><br>
+            <button onclick="addProduct()">Add</button>
+        </div>
+
+        <div class="table-section" id="tableSection" style="display:none;">
+            <h3>Product List</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                </tr>
+                </thead>
+                <tbody id="productTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
